@@ -11,11 +11,6 @@ Original file is located at
 ---
 """
 
-#installing the requisite packages to do the analysis
-! pip install pandas
-! pip install matplotlib
-! pip install numpy
-
 #importing the packages to be used
 import pandas as pd
 import matplotlib.pyplot as plt
