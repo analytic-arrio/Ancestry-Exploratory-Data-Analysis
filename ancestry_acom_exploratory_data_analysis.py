@@ -18,11 +18,11 @@ import numpy as np
 from itertools import compress
 
 """### Retrieve the Data"""
-
+import os
 # Link retrieved from Download Link URL
-path = "https://drive.google.com/uc?authuser=0&id=0B1JyPIh11wT-VS1TOGNIN05HTzQ&export=download"
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+path = os.path.join(ROOT_DIR, 'take-home_exercise_data.csv')
 raw_data = pd.read_csv(path)
-raw_data
 
 # Get the total number of orders
 numrows = len(np.array(raw_data["prospectid"]))
