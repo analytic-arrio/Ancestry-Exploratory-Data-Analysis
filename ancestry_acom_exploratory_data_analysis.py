@@ -24,6 +24,9 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 path = os.path.join(ROOT_DIR, 'take-home_exercise_data.csv')
 raw_data = pd.read_csv(path)
 
+#Notify users of the time required for the below
+print("Gathering data; this may take a few moments...")
+
 # Get the total number of orders
 numrows = len(np.array(raw_data["prospectid"]))
 # Get the total number of customers; the idea here is to be able to see right off the bat how many extra orders there were
